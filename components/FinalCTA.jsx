@@ -43,15 +43,13 @@ export default function FinalCTA({ isRegistered, onRegister }) {
 
   const handleTelegramClick = () => {
     if (isRegistered) {
-      // window.open('https://t.me/fabricadetraders', '_blank')
-      alert('Link do Telegram será adicionado aqui')
+      window.open('https://t.me/+NsvLHcm0LJU5MjIx', '_blank')
     }
   }
 
   const handleWhatsAppClick = () => {
     if (isRegistered) {
-      // window.open('https://wa.me/5511999999999', '_blank')
-      alert('Link do WhatsApp será adicionado aqui')
+      window.open('https://bull-ex.com/whatsapp', '_blank')
     }
   }
 
