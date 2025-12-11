@@ -1,0 +1,80 @@
+.container {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px 12px 12px;
+  background: #25D366;
+  border-radius: 50px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  z-index: 9999;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(37, 211, 102, 0.4);
+  background: #22c35e;
+}
+
+.iconWrapper {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.text {
+  font-family: 'Inter', sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  white-space: nowrap;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    bottom: 24px;
+    right: 24px;
+    padding: 10px 16px 10px 10px;
+  }
+
+  .iconWrapper {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .iconWrapper svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .text {
+    font-size: 0.875rem;
+  }
+}
+
+
+
+

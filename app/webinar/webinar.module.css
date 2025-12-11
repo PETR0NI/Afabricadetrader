@@ -1,0 +1,162 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 120px 24px 60px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: var(--color-text-primary);
+}
+
+.highlight {
+  color: var(--color-green-neon);
+  text-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.mainContent {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+.videoPlayerArea {
+  position: relative;
+  width: 100%;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 16/9;
+}
+
+.videoFrame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.backButton {
+  position: fixed;
+  top: 32px;
+  left: 32px;
+  padding: 12px 24px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 100px;
+  color: var(--color-text-primary);
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.backButton:hover {
+  background: var(--color-green-neon);
+  color: var(--color-black);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 255, 136, 0.3);
+  border-color: var(--color-green-neon);
+}
+
+.ctaSection {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  animation: fadeInUp 0.8s ease-out 0.4s backwards;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 48px;
+  background: var(--color-green-neon);
+  color: var(--color-black);
+  font-weight: 700;
+  font-size: 1.125rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.buttonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonIcon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.ctaButton:hover {
+  background: var(--color-green-neon-hover);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 40px rgba(0, 255, 136, 0.4);
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 100px 20px 40px;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .ctaButton {
+    width: 100%;
+    justify-content: center;
+    padding: 16px 24px;
+  }
+  
+  .backButton {
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
