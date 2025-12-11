@@ -73,7 +73,7 @@ export default function Hero() {
         <div className={styles.textContent}>
           <div className={styles.badge}>
             <span className={styles.badgeDot}></span>
-            Comunidade Exclusiva de Traders
+            Projeto Institucional Oficial <strong className={styles.bullexHighlight}>Bullex</strong>
           </div>
           
           <h1 className={styles.title}>
@@ -84,10 +84,18 @@ export default function Hero() {
           </h1>
           
           <p className={styles.subtitle}>
+            Projeto institucional oficial da <strong className={styles.bullexHighlight}>Bullex</strong>. 
             O único ecossistema completo que combina <strong>comunidade ativa</strong>, 
             <strong> estratégias comprovadas</strong> e <strong>networking estratégico</strong> 
             {' '}para acelerar sua evolução no mercado financeiro.
           </p>
+          
+          <div className={styles.limitedTime}>
+            <span className={styles.limitedTimeIcon}>⏰</span>
+            <span className={styles.limitedTimeText}>
+              Disponível por <strong>tempo limitado</strong>
+            </span>
+          </div>
           
           <div className={styles.stats}>
             <div className={styles.statItem}>
