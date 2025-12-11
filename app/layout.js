@@ -4,9 +4,6 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp'
 export const metadata = {
   title: 'Fábrica de Traders - Seu Ecossistema de Evolução no Mercado',
   description: 'Comunidade exclusiva para traders evoluírem juntos. Cadastre-se na Bullex e acesse a Fábrica de Traders.',
-  icons: {
-    icon: '/favicon.ico',
-  },
 }
 
 export default function RootLayout({ children }) {
