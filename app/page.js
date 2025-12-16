@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import Hero from '@/components/Hero'
-import BenefitsCards from '@/components/BenefitsCards'
 import WebinarSection from '@/components/WebinarSection'
 import FinalCTA from '@/components/FinalCTA'
 
@@ -20,7 +19,6 @@ export default function Home() {
         isRegistered={isRegistered} 
         onRegister={handleRegistration}
       />
-      <BenefitsCards />
       <WebinarSection />
     </main>
   )
